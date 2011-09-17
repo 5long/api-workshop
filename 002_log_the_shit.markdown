@@ -23,7 +23,7 @@ Hello World想必大家应该都用某种语言写过。我们就从这个与之
     end
 
     # Usage:
-    my_own_log_file = File.open '/tmp/debugging_shit'
+    my_own_log_file = File.new('/tmp/debugging_shit', 'w')
     log_the_shit('there it goes', my_own_log_file)
 
 恭喜，你已经完成了一次成功的API演进。不仅良好地保证了向后兼容，还满足了你需要的行为扩展。
